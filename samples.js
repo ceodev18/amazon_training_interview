@@ -14,4 +14,5 @@ function missingNumber(array){
     return alt - sum_array
 }
 
-console.log(missingNumber([3,7,1,2,8,4,5]))
+//console.log(missingNumber([3,7,1,2,8,4,5]))
+console.log([1,2,3,4].shift())
