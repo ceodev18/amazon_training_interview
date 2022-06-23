@@ -95,3 +95,24 @@ console.log(sample)*/
     let to_move = nums.splice(nums.length-k,k)
     nums.splice(0,0,...to_move)
 };
+
+
+function LongestWord(sen) { 
+    const replaced = sen.replace(/[^a-z0-9+\s]/gi, '');
+    const list = replaced.split(' ')
+    let max = Number.MIN_VALUE
+    let index = 0
+    for(let i =0;i<list.length;i++){
+        if(list[i].length>max){
+          max=list[i].length
+          index= i
+        }
+    }
+    // code goes here  
+    return list[index]; 
+  
+  }
+     
+  // keep this function call here 
+  console.log(LongestWord("fun&!! time"));
+  console.log(LongestWord("I love dogs"));
