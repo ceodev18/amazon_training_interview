@@ -29,7 +29,7 @@ function twoSum(nums, target) {
     return []
     
 };*/
-twoSum([3,2,4],6)
+//twoSum([3,2,4],6)
 
 var maxSubArray = function(nums) {
     if(nums.length == 1)  return nums[0]
@@ -75,3 +75,23 @@ var moveZeroes = function(nums) {
 //console.log(data)
 
 
+let sample = [1,2,3,4,5,6,7]
+//sample.splice()
+
+
+
+/*let size = 3
+for (let index = 0; index < size; index++) {
+    sample.unshift(sample.pop())
+}
+console.log(sample)*/
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+ var rotate = function(nums, k) {
+    if(k === 0 || k === nums.length)return
+    let to_move = nums.splice(nums.length-k,k)
+    nums.splice(0,0,...to_move)
+};
