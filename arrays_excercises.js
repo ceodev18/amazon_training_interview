@@ -95,3 +95,6 @@ console.log(sample)*/
     let to_move = nums.splice(nums.length-k,k)
     nums.splice(0,0,...to_move)
 };
+
+
+// [1,2,3,1]
